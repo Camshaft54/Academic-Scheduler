@@ -1,0 +1,217 @@
+[
+  {
+    "Course Name": "Geometry",
+    "Type": "Math",
+    "ID": "MATH1"
+  },
+  {
+    "Course Name": "Algebra II",
+    "Type": "Math",
+    "ID": "MATH2"
+  },
+  {
+    "Course Name": "Precalculus",
+    "Type": "Math",
+    "ID": "MATH3"
+  },
+  {
+    "Course Name": "AP Calculus AB",
+    "Type": "Math",
+    "ID": "MATH4"
+  },
+  {
+    "Course Name": "AP Calculus BC",
+    "Type": "Math",
+    "ID": "MATH5"
+  },
+  {
+    "Course Name": "AP Computer Science",
+    "Type": "Math",
+    "ID": "MATH6"
+  },
+  {
+    "Course Name": "Algorithms",
+    "Type": "Math",
+    "ID": "MATH7"
+  },
+  {
+    "Course Name": "Chemistry",
+    "Type": "Science",
+    "ID": "SCI1"
+  },
+  {
+    "Course Name": "Biology",
+    "Type": "Science",
+    "ID": "SCI2"
+  },
+  {
+    "Course Name": "Advanced Physics",
+    "Type": "Science",
+    "ID": "SCI3"
+  },
+  {
+    "Course Name": "Advanced Chemistry",
+    "Type": "Science",
+    "ID": "SCI4"
+  },
+  {
+    "Course Name": "Advanced Biology",
+    "Type": "Science",
+    "ID": "SCI5"
+  },
+  {
+    "Course Name": "French II",
+    "Type": "Language",
+    "ID": "LANG1A"
+  },
+  {
+    "Course Name": "French III",
+    "Type": "Language",
+    "ID": "LANG1B"
+  },
+  {
+    "Course Name": "French IV",
+    "Type": "Language",
+    "ID": "LANG1C"
+  },
+  {
+    "Course Name": "AP French",
+    "Type": "Language",
+    "ID": "LANG1D"
+  },
+  {
+    "Course Name": "Spanish II",
+    "Type": "Language",
+    "ID": "LANG2A"
+  },
+  {
+    "Course Name": "Spanish III",
+    "Type": "Language",
+    "ID": "LANG2B"
+  },
+  {
+    "Course Name": "Spanish IV",
+    "Type": "Language",
+    "ID": "LANG2C"
+  },
+  {
+    "Course Name": "AP Spanish",
+    "Type": "Language",
+    "ID": "LANG2D"
+  },
+  {
+    "Course Name": "Chinese II",
+    "Type": "Language",
+    "ID": "LANG3A"
+  },
+  {
+    "Course Name": "Chinese III",
+    "Type": "Language",
+    "ID": "LANG3B"
+  },
+  {
+    "Course Name": "Chinese IV",
+    "Type": "Language",
+    "ID": "LANG3C"
+  },
+  {
+    "Course Name": "AP Chinese",
+    "Type": "Language",
+    "ID": "LANG3D"
+  },
+  {
+    "Course Name": "US History",
+    "Type": "History",
+    "ID": "HIST1"
+  },
+  {
+    "Course Name": "Current Events",
+    "Type": "History",
+    "ID": "HIST2"
+  },
+  {
+    "Course Name": "Food on Your Plate",
+    "Type": "History",
+    "ID": "HIST3"
+  },
+  {
+    "Course Name": "Humanitas",
+    "Type": "History",
+    "ID": "HIST4"
+  },
+  {
+    "Course Name": "Macroeconomics",
+    "Type": "History",
+    "ID": "HIST5"
+  },
+  {
+    "Course Name": "US Literature",
+    "Type": "English",
+    "ID": "ENG1"
+  },
+  {
+    "Course Name": "Bay Area Literature",
+    "Type": "English",
+    "ID": "ENG2"
+  },
+  {
+    "Course Name": "Comedy",
+    "Type": "English",
+    "ID": "ENG3"
+  },
+  {
+    "Course Name": "Women's Literature",
+    "Type": "English",
+    "ID": "ENG4"
+  },
+  {
+    "Course Name": "Performing Masculinity",
+    "Type": "English",
+    "ID": "ENG5"
+  },
+  {
+    "Course Name": "Buddhist Thought",
+    "Type": "English",
+    "ID": "ENG6"
+  },
+  {
+    "Course Name": "Literature of War",
+    "Type": "English",
+    "ID": "ENG7"
+  },
+  {
+    "Course Name": "2D Art",
+    "Type": "Art",
+    "ID": "ART1"
+  },
+  {
+    "Course Name": "3D Art",
+    "Type": "Art",
+    "ID": "ART2"
+  },
+  {
+    "Course Name": "Digital Art",
+    "Type": "Art",
+    "ID": "ART3"
+  },
+  {
+    "Course Name": "Photography",
+    "Type": "Art",
+    "ID": "ART4"
+  },
+  {
+    "Course Name": "Sculpture",
+    "Type": "Art",
+    "ID": "ART5"
+  },
+  {
+    "Course Name": "Band",
+    "Type": "Art",
+    "ID": "ART6"
+  },
+  {
+    "Course Name": "Choir",
+    "Type": "Art",
+    "ID": "ART7"
+  }
+]
