@@ -1,6 +1,7 @@
 package io.github.camshaft54.scheduling
 
 import java.util.*
+import kotlin.math.min
 
 
 class RandomizedSelector(students: List<Student>, private val classMap: Map<String, Class>) {
@@ -8,25 +9,42 @@ class RandomizedSelector(students: List<Student>, private val classMap: Map<Stri
         students.associate { it.name to mutableMapOf() }
     private val rand = Random()
 
-    fun generateRandomMasterSchedule(): List<List<Class>> {
+    fun generateRandomMasterSchedule(): Map<Period, List<Class>> {
         val remainingClasses = classMap.values.toMutableList()
-        val masterSchedule = mutableListOf<MutableList<Class>>()
-        val minCoursesPerPeriod = 4.0
-        for (i in 0..6) {
-            if (remainingClasses.isEmpty())
-                break
-            val meanCourses = remainingClasses.size.toDouble() / (7 - i)
-            val sdCourses = 1.5
-            val maxCourses = remainingClasses.size - (6 - i) * minCoursesPerPeriod
-//            println("mean: $meanCourses max: $maxCourses remaining: ${remainingClasses.size}")
-            val courseCount = rand.nextGaussian(meanCourses, sdCourses).coerceIn(minCoursesPerPeriod, maxCourses).toInt()
-            masterSchedule.add(remainingClasses.chooseRandomElements(courseCount))
+        val masterSchedule = mutableMapOf<Period, MutableList<Class>>()
+        for (period in Period.values()) {
+            if (remainingClasses.isEmpty()) break
+            masterSchedule[period] =
+                if (!period.artOnly) {
+                    remainingClasses.chooseRandomNumberOfRandomElements(period.ordinal, false)
+                } else {
+                    val artClasses = remainingClasses.filter { it.type == ClassType.ART }.toMutableList()
+                    if (artClasses.isEmpty()) continue
+                    artClasses.chooseRandomNumberOfRandomElements(period.ordinal, true)
+                }
         }
         while (remainingClasses.isNotEmpty()) {
-            masterSchedule.sortBy { classes -> classes.size }
-            masterSchedule.first().add(remainingClasses.removeAt(rand.nextInt(remainingClasses.size)))
+            val minPeriod = masterSchedule.minByOrNull { (_, classes) -> classes.size }?.key ?: break
+            masterSchedule[minPeriod]?.add(remainingClasses.removeAt(rand.nextInt(remainingClasses.size)))
         }
         return masterSchedule
+    }
+
+    private fun MutableList<Class>.chooseRandomNumberOfRandomElements(
+        periodNum: Int,
+        artOnly: Boolean
+    ): MutableList<Class> {
+        val courseCount =
+            if (artOnly) {
+                if (this.size > 4) rand.nextInt(4, this.size) else this.size
+            } else {
+                val minCoursesPerPeriod = min(4.0, this.size.toDouble())
+                val meanCourses = this.size.toDouble() / (7 - periodNum)
+                val sdCourses = 1.5
+                val maxCourses = this.size - (6 - periodNum) * minCoursesPerPeriod
+                rand.nextGaussian(meanCourses, sdCourses).coerceIn(minCoursesPerPeriod, maxCourses).toInt()
+            }
+        return this.chooseRandomElements(courseCount)
     }
 
     private fun MutableList<Class>.chooseRandomElements(count: Int): MutableList<Class> {

@@ -6,6 +6,7 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.decodeFromStream
 import java.io.File
+import io.github.camshaft54.scheduling.ClassType.Companion.toClassType
 
 /*
 Choose a random number of classes for each period (potentially optimize this by prefering to have a variety of types of classes each period)
@@ -63,10 +64,12 @@ data class Class(
     @SerialName("Course Name")
     val name: String,
     @SerialName("Type")
-    val type: String,
+    val typeStr: String,
     @SerialName("ID")
     val id: String
 ) {
+    val type: ClassType = typeStr.toClassType()
+
     override fun toString(): String {
         return name
     }
@@ -94,13 +97,17 @@ data class Student(val name: String, val grade: Int, val requests: Array<String>
     }
 }
 
-enum class ClassTypes() {
-    MATH(),
-    SCIENCE(),
-    ENGLISH(),
-    HISTORY(),
-    LANGUAGE(),
-    ART()
+enum class ClassType(val displayName: String) {
+    MATH("Math"),
+    SCIENCE("Science"),
+    ENGLISH("English"),
+    HISTORY("History"),
+    LANGUAGE("Language"),
+    ART("Art"),
+    INVALID("Invalid Class Type");
+    companion object {
+        fun String.toClassType(): ClassType = ClassType.values().firstOrNull { it.displayName == this } ?: INVALID
+    }
 }
 
 enum class Period(val artOnly: Boolean = false) {
