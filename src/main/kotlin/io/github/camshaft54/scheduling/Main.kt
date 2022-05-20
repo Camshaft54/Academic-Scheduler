@@ -23,12 +23,15 @@ fun main() {
     val students = jsonStudents.map(JSONStudent::toStudent)
     val classArray = Json.decodeFromStream<Array<Class>>(File("input/classes.json").inputStream())
     val classMap = classArray.associateBy { it.id }
-//    val requestMap = classMap.map { (id, _) ->
-//        id to students.count { id in it.requests }
-//    }
-//    println("Course Requests:\n $requestMap")
-    val randomizedSerializable = RandomizedSelector(students, classMap)
-    println(randomizedSerializable.generateRandomMasterSchedule())
+    val requestMap = classMap.map { (id, _) ->
+        id to students.count { id in it.requests }
+    }
+    println("Course Requests:\n $requestMap")
+    val randomizedSelector = RandomizedSelector(students, classMap)
+    val masterSchedule = randomizedSelector.generateRandomMasterSchedule()
+    println(masterSchedule)
+    val studentSchedules = randomizedSelector.generateStudentSchedules(masterSchedule)
+//    println(studentSchedules)
 }
 
 @Serializable
@@ -60,7 +63,7 @@ data class JSONStudent(
 }
 
 @Serializable
-data class Class(
+open class Class(
     @SerialName("Course Name")
     val name: String,
     @SerialName("Type")
@@ -70,12 +73,14 @@ data class Class(
 ) {
     val type: ClassType = typeStr.toClassType()
 
+    constructor(name: String, type: ClassType, id: String) : this(name, type.displayName, id)
+
     override fun toString(): String {
-        return name
+        return id
     }
 }
 
-data class Student(val name: String, val grade: Int, val requests: Array<String>) {
+open class Student(val name: String, val grade: Int, val requests: Array<String>) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
@@ -97,14 +102,14 @@ data class Student(val name: String, val grade: Int, val requests: Array<String>
     }
 }
 
-enum class ClassType(val displayName: String) {
-    MATH("Math"),
-    SCIENCE("Science"),
-    ENGLISH("English"),
-    HISTORY("History"),
-    LANGUAGE("Language"),
-    ART("Art"),
-    INVALID("Invalid Class Type");
+enum class ClassType(val displayName: String, val maxCapacity: Int) {
+    MATH("Math", 20),
+    SCIENCE("Science", 20),
+    ENGLISH("English", 15),
+    HISTORY("History", 15),
+    LANGUAGE("Language", 10),
+    ART("Art", 12),
+    INVALID("Invalid Class Type", 0);
     companion object {
         fun String.toClassType(): ClassType = ClassType.values().firstOrNull { it.displayName == this } ?: INVALID
     }
