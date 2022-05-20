@@ -29,9 +29,9 @@ fun main() {
     println("Course Requests:\n $requestMap")
     val randomizedSelector = RandomizedSelector(students, classMap)
     val masterSchedule = randomizedSelector.generateRandomMasterSchedule()
-    println(masterSchedule)
-    val studentSchedules = randomizedSelector.generateStudentSchedules(masterSchedule)
-//    println(studentSchedules)
+    println(masterSchedule.masterSchedule)
+    val studentSchedules = randomizedSelector.generateStudentSchedules2(masterSchedule)
+    println(studentSchedules)
 }
 
 @Serializable
