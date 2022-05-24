@@ -5,153 +5,126 @@ import java.util.*
 import kotlin.math.min
 
 
-class RandomizedSelector(private val students: List<Student>, private val classMap: Map<String, Class>) {
+class RandomizedSelector(private val students: List<Student>, private val courses: List<Course>) {
 
     fun generateRandomMasterSchedule(): MasterSchedule {
-        val remainingClasses = classMap.values.toMutableList()
+        val remainingCourses = courses.map { RosteredCourse(it) }.toMutableList()
         val masterSchedule = mutableMapOf<Period, MutableList<RosteredCourse>>()
         for (period in Period.values()) {
-            if (remainingClasses.isEmpty()) break
+            if (remainingCourses.isEmpty()) break
             masterSchedule[period] = if (!period.artOnly) {
-                remainingClasses.chooseRandomNumberOfRandomElements(period.ordinal, false)
+                remainingCourses.removeRandomNumberOfRandomCourses(period.ordinal, false)
             } else {
-                val artClasses = remainingClasses.filter { it.type == ClassType.ART }.toMutableList()
-                if (artClasses.isEmpty()) continue
-                artClasses.chooseRandomNumberOfRandomElements(period.ordinal, true)
-            }.map {RosteredCourse(it)}.toMutableList()
+                val artCourses = remainingCourses.filter { it.type == CourseType.ART }.toMutableList()
+                if (artCourses.isEmpty()) continue
+                artCourses.removeRandomNumberOfRandomCourses(period.ordinal, true)
+            }.apply { remainingCourses.removeAll(this) }.map { RosteredCourse(it) }.toMutableList()
         }
-        while (remainingClasses.isNotEmpty()) {
-            val minPeriod = masterSchedule.minByOrNull { (_, classes) -> classes.size }?.key ?: break
-            masterSchedule[minPeriod]?.add(RosteredCourse(remainingClasses.removeAt(rand.nextInt(remainingClasses.size))))
+        while (remainingCourses.isNotEmpty()) {
+            val minPeriod = masterSchedule.minByOrNull { (_, courses) -> courses.size }?.key ?: break
+            masterSchedule[minPeriod]?.add(RosteredCourse(remainingCourses.removeAt(rand.nextInt(remainingCourses.size))))
         }
         return MasterSchedule(masterSchedule, students.map { ScheduledStudent(it) })
     }
 
-    private fun MutableList<Class>.chooseRandomNumberOfRandomElements(
-        periodNum: Int, artOnly: Boolean
-    ): MutableList<Class> {
-        val courseCount = if (artOnly) {
-            if (this.size > 4) rand.nextInt(4, this.size) else this.size
-        } else {
-            val minCoursesPerPeriod = min(4.0, this.size.toDouble())
-            val meanCourses = this.size.toDouble() / (7 - periodNum)
-            val sdCourses = 1.5
-            val maxCourses = this.size - (6 - periodNum) * minCoursesPerPeriod
-            rand.nextGaussian(meanCourses, sdCourses).coerceIn(minCoursesPerPeriod, maxCourses).toInt()
-        }
-        return this.chooseRandomElements(courseCount).toMutableList()
-    }
-
-//    fun generateStudentSchedules(masterSchedule: Map<Period, List<Class>>): Map<String, MutableMap<Period, Class>> {
-//        val studentSchedules: Map<String, MutableMap<Period, Class>> = students.associate { it.name to mutableMapOf() }
-//        val waitlists: MutableMap<ClassType, MutableList<Student>> =
-//            ClassType.values().associateWith { mutableListOf<Student>() }.toMutableMap()
-//        val classRoster: MutableMap<Class, MutableList<Student>> = mutableMapOf()
-//        var totalWaitlists = 0
-//        for (period in Period.values()) {
-//            for (course in masterSchedule[period] ?: emptyList()) {
-//                val requestingStudents = students.filter { student -> course.id in student.requests }.toMutableList()
-//                val selectedStudents: MutableList<Student>
-//                if (course.type.maxCapacity > requestingStudents.size) {
-//                    selectedStudents =
-//                        waitlists[course.type]?.chooseRandomStudents(course.type.maxCapacity - requestingStudents.size)
-//                            ?: mutableListOf()
-//                    selectedStudents.addAll(requestingStudents)
-//                } else {
-//                    selectedStudents =
-//                        requestingStudents.toMutableList().chooseRandomStudents(course.type.maxCapacity)
-//                    val waitlistedStudents = requestingStudents.minus(selectedStudents.toSet())
-//                    totalWaitlists += waitlistedStudents.size
-//                    waitlists[course.type]?.addAll(waitlistedStudents)
-//                }
-//                selectedStudents.forEach { student -> studentSchedules[student.name]?.set(period, course) }
-//                classRoster[course] = selectedStudents
-//            }
-//        }
-//
-//        val allOpenClasses = classRoster.filter { (course, students) ->
-//            course.type.maxCapacity >= students.size
-//        }
-//        // If there are still open classes in category and students on the waitlist for that category continue
-//        for (type in ClassType.values()) {
-//            val openClasses = allOpenClasses.filter { it.key.type == type }
-//            allOpenClasses.filter { it.key.type == type }.any { (course, students) ->
-//                if (openClasses.isNotEmpty() && waitlists[type]!!.isNotEmpty()) {
-//                    val selectedStudents = waitlists[type]!!.chooseRandomStudents(type.maxCapacity - students.size)
-//                    val currClassPeriod = masterSchedule.firstNotNullOf { if (course in it.value) it.key else null }
-//                    selectedStudents.forEach { student -> studentSchedules[student.name]?.set(currClassPeriod, course) }
-//                    students.addAll(selectedStudents)
-//                    waitlists[type]!!.removeAll(selectedStudents)
-//                    return@any false
-//                } else {
-//                    return@any true
-//                }
-//            }
-//        }
-//        println("Class Roster: ${classRoster.mapValues { (_, students) -> students.size }}")
-//        println("Waitlists: ${waitlists.mapValues { (_, students) -> students.size }}")
-//        return studentSchedules
-//    }
-
-    fun generateStudentSchedules2(masterSchedule: MasterSchedule): MasterSchedule {
-        masterSchedule.selectStudentsForEachCourse { period, course, availableStudents, waitlist ->
-            val selectedStudents: List<ScheduledStudent>
-            if (course.type.maxCapacity > availableStudents.size) {
-                selectedStudents = availableStudents.plus(
-                    waitlist.removeRandomStudents(course.type.maxCapacity - availableStudents.size)
-                )
-            } else {
-                selectedStudents = availableStudents.chooseRandomElements(course.type.maxCapacity)
-                waitlist.addStudents(availableStudents.minus(selectedStudents.toSet()))
+    fun generateStudentSchedules(masterSchedule: MasterSchedule): MasterSchedule {
+       for (round in 0 until 3) {
+            masterSchedule.selectStudentsForEachCourse(round) { course, availableStudents ->
+                println("$course: ${availableStudents.size}")
+                val selectedStudents: List<ScheduledStudent> = if (course.type.maxCapacity > availableStudents.size) {
+                    availableStudents
+                } else {
+                    availableStudents.chooseRandomElements(course.type.maxCapacity)
+                }
+                println(selectedStudents.size)
+                selectedStudents
             }
-            selectedStudents
+           println(masterSchedule)
         }
-
         return masterSchedule
     }
 
     class MasterSchedule(
-        val masterSchedule: Map<Period, List<RosteredCourse>>,
-        val scheduledStudents: List<ScheduledStudent>
+        val masterSchedule: Map<Period, List<RosteredCourse>>, val scheduledStudents: List<ScheduledStudent>
     ) {
-        val waitlists = ClassType.values().associateWith { Waitlist(it) }
-        fun selectStudentsForEachCourse(action: (period: Period, course: RosteredCourse, requestingStudents: List<ScheduledStudent>, waitlist: Waitlist) -> List<ScheduledStudent>) {
+        fun selectStudentsForEachCourse(
+            round: Int,
+            action: (course: RosteredCourse, requestingStudents: List<ScheduledStudent>) -> List<ScheduledStudent>
+        ) {
             for ((period, courses) in masterSchedule) {
                 for (course in courses) {
-                    val requestingStudents = scheduledStudents.filter { student -> course.id in student.requests }
-                    val waitlist = waitlists[course.type]!!
+                    if (round > 0 && course.required) continue
+                    val requestingStudents = scheduledStudents.filter { student -> student.isRequestingCourse(course, round) }
                     val availableStudents = requestingStudents.toMutableList()
-                    for (student in requestingStudents) {
+                    requestingStudents.forEach { student ->
                         if (student.haveClassDuring(period)) {
                             availableStudents.remove(student)
-                            waitlist.addStudent(student)
                         }
                     }
-                    course.students = action.invoke(period, course, availableStudents, waitlist).toMutableList()
+                    course.students = action.invoke(course, availableStudents).toMutableList()
                     course.students.forEach { it.addCourse(period, course) }
+                    if (course.id == "ENG4")
+                        println(masterSchedule)
                 }
             }
         }
 
+        fun calculateSuccess(): Double {
+            // Waitlist success heuristic
+            // return waitlists.values.map { it.waitlistInstances }.sum() + 10 * waitlists.values.map { it.students.size }.sum()
+            // Student requested courses received / requests
+            return scheduledStudents.map { it.calculateSelectionSuccess() }.average()
+        }
+
         override fun toString(): String {
-            return "$masterSchedule\n\n${waitlists.values}"
+            return "Master Schedule (success=${calculateSuccess()}): $masterSchedule"
         }
     }
 
     companion object {
-        private val rand = Random()
+        private val rand = Random(0)
 
         fun <T : Any> List<T>.chooseRandomElements(count: Int): List<T> {
-            println("Student list size: $size, count: $count")
             if (count <= 0) return emptyList()
             if (size <= count) return this
             val mutable = toMutableList()
             return (0 until count).map { mutable.removeAt(rand.nextInt(mutable.size)) }
         }
+
+        private fun MutableList<RosteredCourse>.removeRandomNumberOfRandomCourses(
+            periodNum: Int, artOnly: Boolean
+        ): MutableList<RosteredCourse> {
+            val courseCount = if (artOnly) {
+                if (this.size > 4) rand.nextInt(4, this.size)
+                else this.size
+            } else {
+                val minCoursesPerPeriod = min(4.0, this.size.toDouble())
+                val meanCourses = this.size.toDouble() / (7 - periodNum)
+                val sdCourses = 1.5
+                val maxCourses = this.size - (6 - periodNum) * minCoursesPerPeriod
+                rand.nextGaussian(meanCourses, sdCourses).coerceIn(minCoursesPerPeriod, maxCourses).toInt()
+            }
+            return this.chooseRandomElements(courseCount).toMutableList()
+        }
+    }
+
+    fun findBestSchedule(iterations: Int): MasterSchedule? {
+        var bestSchedule: MasterSchedule? = null
+        var bestSuccess = 0.0
+        for (i in 0 until iterations) {
+            val newSchedule = generateStudentSchedules(generateRandomMasterSchedule())
+            val newSuccess = newSchedule.calculateSuccess()
+            println(newSuccess)
+            if (newSchedule.calculateSuccess() > bestSuccess) {
+                bestSchedule = newSchedule
+                bestSuccess = newSuccess
+            }
+        }
+        return bestSchedule
     }
 }
 
-class Waitlist(val classType: ClassType, val students: MutableList<ScheduledStudent> = mutableListOf()) {
+class Waitlist(val courseType: CourseType, val students: MutableList<ScheduledStudent> = mutableListOf()) {
     var waitlistInstances: Int = 0
     fun removeRandomStudents(count: Int): List<ScheduledStudent> {
         val chosenStudents = students.chooseRandomElements(count)
@@ -170,12 +143,15 @@ class Waitlist(val classType: ClassType, val students: MutableList<ScheduledStud
     }
 
     override fun toString(): String {
-        return "{$classType (instances=$waitlistInstances): $students}"
+        return "{$courseType (instances=$waitlistInstances): $students}"
     }
 }
 
-class RosteredCourse(course: Class) : Class(course.name, course.type, course.id) {
+class RosteredCourse(course: Course) : Course(course.name, course.type, course.id, course.required) {
     var students: MutableList<ScheduledStudent> = mutableListOf()
+    override fun toString(): String {
+        return "$id(${students.size}/${type.maxCapacity})"
+    }
 }
 
 class ScheduledStudent(student: Student) : Student(student.name, student.grade, student.requests) {
@@ -188,5 +164,29 @@ class ScheduledStudent(student: Student) : Student(student.name, student.grade, 
     fun haveClassDuring(period: Period) = schedule.contains(period)
     override fun toString(): String {
         return "{$name: $schedule}"
+    }
+
+    fun calculateSelectionSuccess(): Double {
+        return schedule.map { it.value.id }.intersect(requests.flatten().toSet()).size.toDouble() / requests.size
+    }
+
+    fun isRequestingCourse(course: RosteredCourse, round: Int): Boolean {
+        val requestRanking = requests.firstOrNull { requestRanking -> requestRanking.size > round && requestRanking[round] == course.id}
+        println("${requestRanking.contentDeepToString()} $course")
+        if (requestRanking != null) {
+            if (course.required) {
+                return true
+            } else {
+                for (i in 0 until round) {
+                    if (requestRanking[i] in schedule.values.map {it.id}) {
+                        println("${requestRanking[i]} in ${schedule.values.map {it.id}}")
+                        return false
+                    }
+                }
+                return true
+            }
+        } else {
+            return false
+        }
     }
 }

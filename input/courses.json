@@ -2,216 +2,259 @@
   {
     "Course Name": "Geometry",
     "Type": "Math",
-    "ID": "MATH1"
+    "ID": "MATH1",
+    "Required": true
   },
   {
     "Course Name": "Algebra II",
     "Type": "Math",
-    "ID": "MATH2"
+    "ID": "MATH2",
+    "Required": true
   },
   {
     "Course Name": "Precalculus",
     "Type": "Math",
-    "ID": "MATH3"
+    "ID": "MATH3",
+    "Required": true
   },
   {
     "Course Name": "AP Calculus AB",
     "Type": "Math",
-    "ID": "MATH4"
+    "ID": "MATH4",
+    "Required": true
   },
   {
     "Course Name": "AP Calculus BC",
     "Type": "Math",
-    "ID": "MATH5"
+    "ID": "MATH5",
+    "Required": true
   },
   {
     "Course Name": "AP Computer Science",
     "Type": "Math",
-    "ID": "MATH6"
+    "ID": "MATH6",
+    "Required": false
   },
   {
     "Course Name": "Algorithms",
     "Type": "Math",
-    "ID": "MATH7"
+    "ID": "MATH7",
+    "Required": false
   },
   {
     "Course Name": "Chemistry",
     "Type": "Science",
-    "ID": "SCI1"
+    "ID": "SCI1",
+    "Required": true
   },
   {
     "Course Name": "Biology",
     "Type": "Science",
-    "ID": "SCI2"
+    "ID": "SCI2",
+    "Required": true
   },
   {
     "Course Name": "Advanced Physics",
     "Type": "Science",
-    "ID": "SCI3"
+    "ID": "SCI3",
+    "Required": false
   },
   {
     "Course Name": "Advanced Chemistry",
     "Type": "Science",
-    "ID": "SCI4"
+    "ID": "SCI4",
+    "Required": false
   },
   {
     "Course Name": "Advanced Biology",
     "Type": "Science",
-    "ID": "SCI5"
+    "ID": "SCI5",
+    "Required": false
   },
   {
     "Course Name": "French II",
     "Type": "Language",
-    "ID": "LANG1A"
+    "ID": "LANG1A",
+    "Required": true
   },
   {
     "Course Name": "French III",
     "Type": "Language",
-    "ID": "LANG1B"
+    "ID": "LANG1B",
+    "Required": true
   },
   {
     "Course Name": "French IV",
     "Type": "Language",
-    "ID": "LANG1C"
+    "ID": "LANG1C",
+    "Required": false
   },
   {
     "Course Name": "AP French",
     "Type": "Language",
-    "ID": "LANG1D"
+    "ID": "LANG1D",
+    "Required": false
   },
   {
     "Course Name": "Spanish II",
     "Type": "Language",
-    "ID": "LANG2A"
+    "ID": "LANG2A",
+    "Required": true
   },
   {
     "Course Name": "Spanish III",
     "Type": "Language",
-    "ID": "LANG2B"
+    "ID": "LANG2B",
+    "Required": true
   },
   {
     "Course Name": "Spanish IV",
     "Type": "Language",
-    "ID": "LANG2C"
+    "ID": "LANG2C",
+    "Required": false
   },
   {
     "Course Name": "AP Spanish",
     "Type": "Language",
-    "ID": "LANG2D"
+    "ID": "LANG2D",
+    "Required": false
   },
   {
     "Course Name": "Chinese II",
     "Type": "Language",
-    "ID": "LANG3A"
+    "ID": "LANG3A",
+    "Required": true
   },
   {
     "Course Name": "Chinese III",
     "Type": "Language",
-    "ID": "LANG3B"
+    "ID": "LANG3B",
+    "Required": true
   },
   {
     "Course Name": "Chinese IV",
     "Type": "Language",
-    "ID": "LANG3C"
+    "ID": "LANG3C",
+    "Required": false
   },
   {
     "Course Name": "AP Chinese",
     "Type": "Language",
-    "ID": "LANG3D"
+    "ID": "LANG3D",
+    "Required": false
   },
   {
     "Course Name": "US History",
     "Type": "History",
-    "ID": "HIST1"
+    "ID": "HIST1",
+    "Required": true
   },
   {
     "Course Name": "Current Events",
     "Type": "History",
-    "ID": "HIST2"
+    "ID": "HIST2",
+    "Required": false
   },
   {
     "Course Name": "Food on Your Plate",
     "Type": "History",
-    "ID": "HIST3"
+    "ID": "HIST3",
+    "Required": false
   },
   {
     "Course Name": "Humanitas",
     "Type": "History",
-    "ID": "HIST4"
+    "ID": "HIST4",
+    "Required": false
   },
   {
     "Course Name": "Macroeconomics",
     "Type": "History",
-    "ID": "HIST5"
+    "ID": "HIST5",
+    "Required": false
   },
   {
     "Course Name": "US Literature",
     "Type": "English",
-    "ID": "ENG1"
+    "ID": "ENG1",
+    "Required": true
   },
   {
     "Course Name": "Bay Area Literature",
     "Type": "English",
-    "ID": "ENG2"
+    "ID": "ENG2",
+    "Required": false
   },
   {
     "Course Name": "Comedy",
     "Type": "English",
-    "ID": "ENG3"
+    "ID": "ENG3",
+    "Required": false
   },
   {
     "Course Name": "Women's Literature",
     "Type": "English",
-    "ID": "ENG4"
+    "ID": "ENG4",
+    "Required": false
   },
   {
     "Course Name": "Performing Masculinity",
     "Type": "English",
-    "ID": "ENG5"
+    "ID": "ENG5",
+    "Required": false
   },
   {
     "Course Name": "Buddhist Thought",
     "Type": "English",
-    "ID": "ENG6"
+    "ID": "ENG6",
+    "Required": false
   },
   {
     "Course Name": "Literature of War",
     "Type": "English",
-    "ID": "ENG7"
+    "ID": "ENG7",
+    "Required": false
   },
   {
     "Course Name": "2D Art",
     "Type": "Art",
-    "ID": "ART1"
+    "ID": "ART1",
+    "Required": false
   },
   {
     "Course Name": "3D Art",
     "Type": "Art",
-    "ID": "ART2"
+    "ID": "ART2",
+    "Required": false
   },
   {
     "Course Name": "Digital Art",
     "Type": "Art",
-    "ID": "ART3"
+    "ID": "ART3",
+    "Required": false
   },
   {
     "Course Name": "Photography",
     "Type": "Art",
-    "ID": "ART4"
+    "ID": "ART4",
+    "Required": false
   },
   {
     "Course Name": "Sculpture",
     "Type": "Art",
-    "ID": "ART5"
+    "ID": "ART5",
+    "Required": false
   },
   {
     "Course Name": "Band",
     "Type": "Art",
-    "ID": "ART6"
+    "ID": "ART6",
+    "Required": false
   },
   {
     "Course Name": "Choir",
     "Type": "Art",
-    "ID": "ART7"
+    "ID": "ART7",
+    "Required": false
   }
 ]

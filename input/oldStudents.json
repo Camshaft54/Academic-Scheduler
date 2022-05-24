@@ -7,8 +7,8 @@
     "Class 3 Request": "SCI1",
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2C",
-    "Class 6 Request": "MATH1",
-    "Class 7 Request": "ART1, ART2, ART5"
+    "Class 6 Request": "ART2",
+    "Class 7 Request": "ART1"
   },
   {
     "Student Name": "Houston Rodgers",
@@ -19,7 +19,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2C",
     "Class 6 Request": "MATH2",
-    "Class 7 Request": "ART2, ART3, ART5"
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Karly Strong",
@@ -30,7 +30,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2D",
     "Class 6 Request": "MATH1",
-    "Class 7 Request": "ART3, ART6, ART5"
+    "Class 7 Request": "ART3"
   },
   {
     "Student Name": "Nathan Yoder",
@@ -41,7 +41,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG3D",
     "Class 6 Request": "",
-    "Class 7 Request": "ART4, ART6, ART5"
+    "Class 7 Request": "ART4"
   },
   {
     "Student Name": "Jett Bush",
@@ -52,7 +52,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG3C",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART5, ART6, ART2"
+    "Class 7 Request": "ART5"
   },
   {
     "Student Name": "Chloe Everett",
@@ -63,7 +63,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG3B",
     "Class 6 Request": "MATH2",
-    "Class 7 Request": "ART6, ART5, ART3"
+    "Class 7 Request": "ART6"
   },
   {
     "Student Name": "Aydan Riddle",
@@ -73,8 +73,8 @@
     "Class 3 Request": "SCI1",
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG3B",
-    "Class 6 Request": "ART2, ART3, ART4",
-    "Class 7 Request": "ART6, ART3, ART2"
+    "Class 6 Request": "ART2",
+    "Class 7 Request": "ART6"
   },
   {
     "Student Name": "Lucy Owen",
@@ -85,7 +85,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2B",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART6, ART4, ART3"
+    "Class 7 Request": "ART6"
   },
   {
     "Student Name": "Rowan Rios",
@@ -96,7 +96,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2B",
     "Class 6 Request": "MATH1",
-    "Class 7 Request": "ART6, ART4, ART3"
+    "Class 7 Request": "ART6"
   },
   {
     "Student Name": "Lilliana Bernard",
@@ -107,7 +107,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG1B",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART1, ART1, ART2"
+    "Class 7 Request": "ART1"
   },
   {
     "Student Name": "Reese Bernard",
@@ -118,7 +118,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG1B",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART1, ART2, ART4"
+    "Class 7 Request": "ART1"
   },
   {
     "Student Name": "Dale Summers",
@@ -128,8 +128,8 @@
     "Class 3 Request": "SCI1",
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2C",
-    "Class 6 Request": "ART1, ART6, ART5",
-    "Class 7 Request": "ART2, ART3, ART1"
+    "Class 6 Request": "ART1",
+    "Class 7 Request": "ART1"
   },
   {
     "Student Name": "Hillary Mann",
@@ -140,7 +140,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG3B",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART3, ART2, ART1"
+    "Class 7 Request": "ART3"
   },
   {
     "Student Name": "Tessa Dennis",
@@ -151,7 +151,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2B",
     "Class 6 Request": "MATH2",
-    "Class 7 Request": "ART2, ART3, ART5"
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Charlee Carrillo",
@@ -162,7 +162,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG1C",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART1, ART3, ART6"
+    "Class 7 Request": "ART1"
   },
   {
     "Student Name": "Jaden Waters",
@@ -173,7 +173,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2B",
     "Class 6 Request": "",
-    "Class 7 Request": "ART1, ART6, ART4"
+    "Class 7 Request": "ART1"
   },
   {
     "Student Name": "Porter Washington",
@@ -183,8 +183,8 @@
     "Class 3 Request": "SCI1",
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2B",
-    "Class 6 Request": "ART2, ART6, ART1",
-    "Class 7 Request": "ART5, ART4, ART3"
+    "Class 6 Request": "ART2",
+    "Class 7 Request": "ART5"
   },
   {
     "Student Name": "Riley Pugh",
@@ -194,8 +194,8 @@
     "Class 3 Request": "SCI1",
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2B",
-    "Class 6 Request": "ART5, ART3, ART1",
-    "Class 7 Request": "ART6, ART4, ART2"
+    "Class 6 Request": "ART5",
+    "Class 7 Request": "ART6"
   },
   {
     "Student Name": "Elena Alvarez",
@@ -206,7 +206,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2B",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART5, ART3, ART4"
+    "Class 7 Request": "ART5"
   },
   {
     "Student Name": "Saniyah Levine",
@@ -216,8 +216,8 @@
     "Class 3 Request": "SCI1",
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2B",
-    "Class 6 Request": "ART5, ART1, ART4",
-    "Class 7 Request": "ART6, ART2, ART3"
+    "Class 6 Request": "ART5",
+    "Class 7 Request": "ART6"
   },
   {
     "Student Name": "Zaniyah Rivas",
@@ -227,8 +227,8 @@
     "Class 3 Request": "SCI1",
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2B",
-    "Class 6 Request": "ART3, ART4, ART1",
-    "Class 7 Request": "ART6, ART4, ART1"
+    "Class 6 Request": "ART3",
+    "Class 7 Request": "ART6"
   },
   {
     "Student Name": "Belen Huff",
@@ -249,7 +249,7 @@
     "Class 3 Request": "SCI1",
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2C",
-    "Class 6 Request": "ART5, ART3, ART2",
+    "Class 6 Request": "ART5",
     "Class 7 Request": ""
   },
   {
@@ -271,7 +271,7 @@
     "Class 3 Request": "SCI1",
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG3B",
-    "Class 6 Request": "ART5, ART2, ART1",
+    "Class 6 Request": "ART5",
     "Class 7 Request": ""
   },
   {
@@ -315,8 +315,8 @@
     "Class 3 Request": "SCI1",
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2B",
-    "Class 6 Request": "ART3, ART2, ART1",
-    "Class 7 Request": "ART4, ART6, ART2"
+    "Class 6 Request": "ART3",
+    "Class 7 Request": "ART4"
   },
   {
     "Student Name": "Maria Hall",
@@ -327,7 +327,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG3B",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART3, ART2, ART1"
+    "Class 7 Request": "ART3"
   },
   {
     "Student Name": "Valerie Craig",
@@ -338,7 +338,7 @@
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG2B",
     "Class 6 Request": "",
-    "Class 7 Request": "ART4, ART5, ART3"
+    "Class 7 Request": "ART4"
   },
   {
     "Student Name": "Johnathon Moreno",
@@ -348,8 +348,8 @@
     "Class 3 Request": "SCI1",
     "Class 4 Request": "HIST1",
     "Class 5 Request": "LANG1B",
-    "Class 6 Request": "ART2, ART5, ART3",
-    "Class 7 Request": "ART3, ART1, ART4"
+    "Class 6 Request": "ART2",
+    "Class 7 Request": "ART3"
   },
   {
     "Student Name": "Ashlynn Salas",
@@ -366,64 +366,64 @@
     "Student Name": "Addyson Barry",
     "Grade": 11,
     "Class 1 Request": "MATH2",
-    "Class 2 Request": "ENG3, ENG2, ENG4",
+    "Class 2 Request": "ENG3",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST5, HIST2",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG2C",
-    "Class 6 Request": "ART5, ART4, ART6",
+    "Class 6 Request": "ART5",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Gloria Cisneros",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG6, ENG5, ENG3",
+    "Class 2 Request": "ENG6",
     "Class 3 Request": "SCI2",
     "Class 4 Request": "",
     "Class 5 Request": "LANG2C",
-    "Class 6 Request": "ART4, ART3, ART2",
+    "Class 6 Request": "ART4",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Riley Hebert",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG5, ENG4, ENG6",
+    "Class 2 Request": "ENG5",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST2, HIST5",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG3C",
     "Class 6 Request": "MATH7",
-    "Class 7 Request": "ART2, ART3, ART6"
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Nicolas Pena",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG4, ENG6, ENG3",
+    "Class 2 Request": "ENG4",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST2, HIST3, HIST4",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "LANG1C",
-    "Class 6 Request": "ART3, ART2, ART5",
+    "Class 6 Request": "ART3",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Kennedy Santos",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG2, ENG3, ENG4",
+    "Class 2 Request": "ENG2",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST4, HIST5",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG2C",
     "Class 6 Request": "MATH7",
-    "Class 7 Request": "ART2, ART1, ART4"
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Jean Marshall",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG2, ENG5, ENG4",
+    "Class 2 Request": "ENG2",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST5, HIST4",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG1C",
     "Class 6 Request": "MATH6",
     "Class 7 Request": ""
@@ -432,20 +432,20 @@
     "Student Name": "Noel Anthony",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG7, ENG4, ENG6",
+    "Class 2 Request": "ENG7",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST2, HIST4, HIST3",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "",
-    "Class 6 Request": "SCI3, SCI4, SCI5",
+    "Class 6 Request": "SCI3",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Isai Hubbard",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG5, ENG3, ENG4",
+    "Class 2 Request": "ENG5",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST5, HIST2",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "",
     "Class 6 Request": "MATH7",
     "Class 7 Request": ""
@@ -454,53 +454,53 @@
     "Student Name": "Faith Ali",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG5, ENG3, ENG2",
+    "Class 2 Request": "ENG5",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST5, HIST2, HIST3",
+    "Class 4 Request": "HIST5",
     "Class 5 Request": "",
-    "Class 6 Request": "SCI5, SCI3, SCI4",
+    "Class 6 Request": "SCI5",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Lennon Weaver",
     "Grade": 11,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG2, ENG4, ENG3",
+    "Class 2 Request": "ENG2",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST2, HIST3, HIST4",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "LANG1C",
-    "Class 6 Request": "ART2, ART3, ART4",
-    "Class 7 Request": "ART3, ART2, ART6"
+    "Class 6 Request": "ART2",
+    "Class 7 Request": "ART3"
   },
   {
     "Student Name": "Ivan Richmond",
     "Grade": 11,
     "Class 1 Request": "MATH2",
-    "Class 2 Request": "ENG2, ENG6, ENG5",
+    "Class 2 Request": "ENG2",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST5, HIST4, HIST2",
+    "Class 4 Request": "HIST5",
     "Class 5 Request": "LANG2C",
-    "Class 6 Request": "ART2, ART6, ART5",
+    "Class 6 Request": "ART2",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Josiah Walton",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG2, ENG6, ENG3",
+    "Class 2 Request": "ENG2",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST2, HIST5",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG2D",
-    "Class 6 Request": "ART2, ART1, ART6",
-    "Class 7 Request": "ART4, ART2, ART3"
+    "Class 6 Request": "ART2",
+    "Class 7 Request": "ART4"
   },
   {
     "Student Name": "Isaias Berger",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG4, ENG3, ENG2",
+    "Class 2 Request": "ENG7",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST2, HIST5, HIST3",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "LANG2C",
     "Class 6 Request": "MATH7",
     "Class 7 Request": ""
@@ -509,119 +509,119 @@
     "Student Name": "Sage Adams",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG2, ENG4, ENG5",
+    "Class 2 Request": "ENG2",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST2, HIST5, HIST3",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "LANG2C",
-    "Class 6 Request": "SCI5, SCI3, SCI4",
+    "Class 6 Request": "SCI5",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Mark Gonzalez",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG6, ENG2, ENG4",
+    "Class 2 Request": "ENG6",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST4, HIST5",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG3C",
-    "Class 6 Request": "ART2, ART4, ART5",
+    "Class 6 Request": "ART2",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Matthew Casey",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG5, ENG2, ENG3",
+    "Class 2 Request": "ENG5",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST2, HIST3, HIST5",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "LANG2D",
-    "Class 6 Request": "SCI3, SCI5, SCI4",
-    "Class 7 Request": "ART2, ART4, ART5"
+    "Class 6 Request": "SCI3",
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Luke Lamb",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG4, ENG5, ENG2",
+    "Class 2 Request": "ENG4",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST2, HIST5, HIST4",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "",
-    "Class 6 Request": "ART2, ART1, ART5",
+    "Class 6 Request": "ART2",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Marley Mcdonald",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG5, ENG3, ENG4",
+    "Class 2 Request": "ENG5",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST4, HIST2",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG2C",
-    "Class 6 Request": "SCI4, SCI3, SCI5",
+    "Class 6 Request": "SCI4",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Elian Baird",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG2, ENG3, ENG4",
+    "Class 2 Request": "ENG2",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST5, HIST4, HIST2",
+    "Class 4 Request": "HIST5",
     "Class 5 Request": "LANG3C",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART3, ART5, ART4"
+    "Class 7 Request": "ART3"
   },
   {
     "Student Name": "Ryker Hooper",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG3, ENG6, ENG5",
+    "Class 2 Request": "ENG3",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST5, HIST3, HIST4",
+    "Class 4 Request": "HIST5",
     "Class 5 Request": "LANG2C",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART2, ART4, ART1"
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Colby Robinson",
     "Grade": 11,
     "Class 1 Request": "MATH2",
-    "Class 2 Request": "ENG4, ENG2, ENG5",
+    "Class 2 Request": "ENG4",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST2, HIST3, HIST4",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "",
-    "Class 6 Request": "ART6, ART3, ART1",
+    "Class 6 Request": "ART6",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Athena Kidd",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG5, ENG4, ENG6",
+    "Class 2 Request": "ENG5",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST2, HIST4, HIST3",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "LANG2D",
-    "Class 6 Request": "SCI4, SCI3, SCI5",
-    "Class 7 Request": "ART3, ART2, ART5"
+    "Class 6 Request": "SCI4",
+    "Class 7 Request": "ART3"
   },
   {
     "Student Name": "Destinee Rush",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG4, ENG2, ENG6",
+    "Class 2 Request": "ENG4",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST5, HIST4, HIST2",
+    "Class 4 Request": "HIST5",
     "Class 5 Request": "LANG2C",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART3, ART1, ART2"
+    "Class 7 Request": "ART3"
   },
   {
     "Student Name": "Maci Dominguez",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG3, ENG5, ENG6",
+    "Class 2 Request": "ENG3",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST5, HIST4",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG1C",
     "Class 6 Request": "MATH6",
     "Class 7 Request": ""
@@ -630,20 +630,20 @@
     "Student Name": "Trevon Bennett",
     "Grade": 11,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG4, ENG6, ENG5",
+    "Class 2 Request": "ENG7",
     "Class 3 Request": "SCI2",
     "Class 4 Request": "",
     "Class 5 Request": "LANG2C",
-    "Class 6 Request": "ART2, ART4, ART1",
+    "Class 6 Request": "ART2",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Waylon Gamble",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG5, ENG3, ENG6",
+    "Class 2 Request": "ENG5",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST2, HIST4, HIST3",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "LANG2C",
     "Class 6 Request": "MATH7",
     "Class 7 Request": ""
@@ -652,9 +652,9 @@
     "Student Name": "Moriah Edwards",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG4, ENG2, ENG3",
+    "Class 2 Request": "ENG4",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST2, HIST5, HIST3",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "LANG1C",
     "Class 6 Request": "MATH7",
     "Class 7 Request": ""
@@ -663,7 +663,7 @@
     "Student Name": "Brooklyn Lara",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG2, ENG4, ENG6",
+    "Class 2 Request": "ENG2",
     "Class 3 Request": "SCI2",
     "Class 4 Request": "",
     "Class 5 Request": "",
@@ -674,20 +674,20 @@
     "Student Name": "Rhett Luna",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG5, ENG2, ENG4",
+    "Class 2 Request": "ENG5",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST5, HIST4, HIST2",
+    "Class 4 Request": "HIST5",
     "Class 5 Request": "",
-    "Class 6 Request": "SCI3, SCI5, SCI4",
+    "Class 6 Request": "SCI3",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Sammy Barton",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG4, ENG5, ENG2",
+    "Class 2 Request": "ENG4",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST5, HIST2, HIST3",
+    "Class 4 Request": "HIST5",
     "Class 5 Request": "LANG2C",
     "Class 6 Request": "MATH7",
     "Class 7 Request": ""
@@ -696,31 +696,31 @@
     "Student Name": "Julian Henry",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG5, ENG6, ENG3",
+    "Class 2 Request": "ENG5",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST2, HIST5",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG3D",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART2, ART5, ART4"
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Aaden Jacobson",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG2, ENG3, ENG6",
+    "Class 2 Request": "ENG2",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST4, HIST2",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG3C",
-    "Class 6 Request": "ART4, ART2, ART6",
+    "Class 6 Request": "ART4",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Aubrey Mclaughlin",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG5, ENG2, ENG6",
+    "Class 2 Request": "ENG5",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST2, HIST4",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG1D",
     "Class 6 Request": "MATH7",
     "Class 7 Request": ""
@@ -729,64 +729,64 @@
     "Student Name": "Brogan Hartman",
     "Grade": 11,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG6, ENG2, ENG5",
+    "Class 2 Request": "ENG6",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST3, HIST4, HIST2",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG3C",
-    "Class 6 Request": "ART6, ART5, ART4",
+    "Class 6 Request": "ART6",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Jorge Arias",
     "Grade": 11,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG5, ENG6, ENG2",
+    "Class 2 Request": "ENG7",
     "Class 3 Request": "SCI2",
-    "Class 4 Request": "HIST5, HIST4, HIST3",
+    "Class 4 Request": "HIST5",
     "Class 5 Request": "LANG3C",
-    "Class 6 Request": "SCI3, SCI4, SCI5",
-    "Class 7 Request": "ART3, ART6, ART5"
+    "Class 6 Request": "SCI3",
+    "Class 7 Request": "ART3"
   },
   {
     "Student Name": "Kelvin Middleton",
     "Grade": 12,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG2, ENG3, ENG7",
-    "Class 3 Request": "SCI5, SCI4, SCI3",
+    "Class 2 Request": "ENG2",
+    "Class 3 Request": "SCI5",
     "Class 4 Request": "",
     "Class 5 Request": "",
-    "Class 6 Request": "ART6, ART5, ART4",
+    "Class 6 Request": "ART6",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Davian Strickland",
     "Grade": 12,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG2, ENG1, ENG6",
-    "Class 3 Request": "SCI4, SCI3, SCI5",
-    "Class 4 Request": "HIST4, HIST2, HIST3",
+    "Class 2 Request": "ENG2",
+    "Class 3 Request": "SCI4",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "LANG1D",
-    "Class 6 Request": "ART6, ART5, ART4",
-    "Class 7 Request": "ART2, ART1, ART3"
+    "Class 6 Request": "ART6",
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Joel Erickson",
     "Grade": 12,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG4, ENG6, ENG7",
-    "Class 3 Request": "SCI3, SCI4, SCI5",
-    "Class 4 Request": "HIST5, HIST3, HIST2",
+    "Class 2 Request": "ENG4",
+    "Class 3 Request": "SCI3",
+    "Class 4 Request": "HIST5",
     "Class 5 Request": "",
     "Class 6 Request": "MATH7",
-    "Class 7 Request": "ART2, ART5, ART6"
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Lacey Welch",
     "Grade": 12,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG2, ENG4, ENG3",
-    "Class 3 Request": "SCI3, SCI5, SCI4",
-    "Class 4 Request": "HIST4, HIST2, HIST3",
+    "Class 2 Request": "ENG2",
+    "Class 3 Request": "SCI3",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "",
     "Class 6 Request": "MATH7",
     "Class 7 Request": ""
@@ -795,8 +795,8 @@
     "Student Name": "Julius Mcclure",
     "Grade": 12,
     "Class 1 Request": "",
-    "Class 2 Request": "ENG4, ENG7, ENG5",
-    "Class 3 Request": "SCI4, SCI5, SCI3",
+    "Class 2 Request": "ENG4",
+    "Class 3 Request": "SCI4",
     "Class 4 Request": "",
     "Class 5 Request": "LANG2D",
     "Class 6 Request": "MATH6",
@@ -806,8 +806,8 @@
     "Student Name": "Jamiya Oliver",
     "Grade": 12,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG4, ENG5, ENG2",
-    "Class 3 Request": "ENG3, ENG2, ENG7",
+    "Class 2 Request": "ENG4",
+    "Class 3 Request": "ENG3",
     "Class 4 Request": "",
     "Class 5 Request": "",
     "Class 6 Request": "MATH6",
@@ -817,31 +817,31 @@
     "Student Name": "Jose Jefferson",
     "Grade": 12,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG5, ENG2, ENG3",
-    "Class 3 Request": "SCI4, SCI3, SCI5",
-    "Class 4 Request": "HIST2, HIST3, HIST5",
+    "Class 2 Request": "ENG5",
+    "Class 3 Request": "SCI4",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "",
-    "Class 6 Request": "ART4, ART6, ART5",
+    "Class 6 Request": "ART4",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Abbie Griffin",
     "Grade": 12,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG2, ENG5, ENG6",
-    "Class 3 Request": "SCI3, SCI4, SCI5",
+    "Class 2 Request": "ENG2",
+    "Class 3 Request": "SCI3",
     "Class 4 Request": "",
     "Class 5 Request": "",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART2, ART3, ART6"
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Nikolai Ellison",
     "Grade": 12,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG5, ENG3, ENG4",
-    "Class 3 Request": "SCI4, SCI3, SCI5",
-    "Class 4 Request": "HIST5, HIST4, HIST3",
+    "Class 2 Request": "ENG5",
+    "Class 3 Request": "SCI5",
+    "Class 4 Request": "HIST5",
     "Class 5 Request": "LANG3D",
     "Class 6 Request": "MATH7",
     "Class 7 Request": ""
@@ -850,75 +850,75 @@
     "Student Name": "Makai Allen",
     "Grade": 12,
     "Class 1 Request": "MATH3",
-    "Class 2 Request": "ENG7, ENG4, ENG3",
-    "Class 3 Request": "SCI4, SCI5, SCI3",
+    "Class 2 Request": "ENG7",
+    "Class 3 Request": "SCI4",
     "Class 4 Request": "",
     "Class 5 Request": "LANG3D",
-    "Class 6 Request": "SCI5, SCI4, SCI3",
+    "Class 6 Request": "SCI5",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Maddox Oneal",
     "Grade": 12,
     "Class 1 Request": "",
-    "Class 2 Request": "ENG2, ENG5, ENG3",
-    "Class 3 Request": "ENG5, ENG6, ENG7",
-    "Class 4 Request": "HIST4, HIST5, HIST3",
+    "Class 2 Request": "ENG2",
+    "Class 3 Request": "ENG5",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "LANG3B",
     "Class 6 Request": "MATH7",
-    "Class 7 Request": "ART1, ART5, ART2"
+    "Class 7 Request": "ART1"
   },
   {
     "Student Name": "Eduardo Villa",
     "Grade": 12,
     "Class 1 Request": "",
-    "Class 2 Request": "ENG6, ENG3, ENG2",
-    "Class 3 Request": "SCI4, SCI5, SCI3",
-    "Class 4 Request": "HIST3, HIST4, HIST2",
+    "Class 2 Request": "ENG6",
+    "Class 3 Request": "SCI4",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG2D",
-    "Class 6 Request": "SCI5, SCI3, SCI4",
-    "Class 7 Request": "ART3, ART5, ART6"
+    "Class 6 Request": "SCI5",
+    "Class 7 Request": "ART3"
   },
   {
     "Student Name": "Sophie Hodges",
     "Grade": 12,
     "Class 1 Request": "",
-    "Class 2 Request": "ENG3, ENG7, ENG2",
-    "Class 3 Request": "SCI3, SCI5, SCI4",
+    "Class 2 Request": "ENG3",
+    "Class 3 Request": "SCI3",
     "Class 4 Request": "",
     "Class 5 Request": "LANG1D",
     "Class 6 Request": "MATH7",
-    "Class 7 Request": "ART3, ART1, ART4"
+    "Class 7 Request": "ART3"
   },
   {
     "Student Name": "Gabrielle Mcknight",
     "Grade": 12,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG6, ENG2, ENG4",
-    "Class 3 Request": "SCI3, SCI5, SCI4",
-    "Class 4 Request": "HIST4, HIST3, HIST5",
+    "Class 2 Request": "ENG6",
+    "Class 3 Request": "SCI3",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "",
-    "Class 6 Request": "ART5, ART6, ART1",
+    "Class 6 Request": "ART5",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Timothy Alvarez",
     "Grade": 12,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG7, ENG5, ENG3",
-    "Class 3 Request": "ENG2, ENG6, ENG3",
-    "Class 4 Request": "HIST3, HIST4, HIST2",
+    "Class 2 Request": "ENG7",
+    "Class 3 Request": "ENG2",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG3D",
-    "Class 6 Request": "SCI5, SCI3, SCI4",
-    "Class 7 Request": "ART5, ART4, ART3"
+    "Class 6 Request": "SCI5",
+    "Class 7 Request": "ART5"
   },
   {
     "Student Name": "Averie Guerrero",
     "Grade": 12,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG3, ENG5, ENG6",
-    "Class 3 Request": "SCI5, SCI3, SCI4",
-    "Class 4 Request": "HIST4, HIST5, HIST3",
+    "Class 2 Request": "ENG3",
+    "Class 3 Request": "SCI5",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "LANG1D",
     "Class 6 Request": "MATH7",
     "Class 7 Request": ""
@@ -927,20 +927,20 @@
     "Student Name": "Lily Floyd",
     "Grade": 12,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG6, ENG4, ENG2",
-    "Class 3 Request": "SCI4, SCI5, SCI3",
-    "Class 4 Request": "HIST2, HIST4, HIST3",
+    "Class 2 Request": "ENG6",
+    "Class 3 Request": "SCI4",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "",
-    "Class 6 Request": "SCI3, SCI5, SCI4",
-    "Class 7 Request": "ART4, ART3, ART6"
+    "Class 6 Request": "SCI3",
+    "Class 7 Request": "ART4"
   },
   {
     "Student Name": "Zaid Burton",
     "Grade": 12,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG6, ENG2, ENG3",
-    "Class 3 Request": "SCI4, SCI3, SCI5",
-    "Class 4 Request": "HIST5, HIST3, HIST4",
+    "Class 2 Request": "ENG6",
+    "Class 3 Request": "SCI4",
+    "Class 4 Request": "HIST5",
     "Class 5 Request": "",
     "Class 6 Request": "MATH7",
     "Class 7 Request": ""
@@ -949,75 +949,75 @@
     "Student Name": "Evelyn Rosales",
     "Grade": 12,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG2, ENG5, ENG4",
-    "Class 3 Request": "ENG4, ENG3, ENG2",
-    "Class 4 Request": "HIST4, HIST3, HIST5",
+    "Class 2 Request": "ENG2",
+    "Class 3 Request": "ENG4",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "LANG2D",
-    "Class 6 Request": "ART2, ART3, ART1",
+    "Class 6 Request": "ART2",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Kaylee Cobb",
     "Grade": 12,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG2, ENG4, ENG6",
-    "Class 3 Request": "SCI5, SCI4, SCI3",
-    "Class 4 Request": "HIST4, HIST3, HIST2",
+    "Class 2 Request": "ENG2",
+    "Class 3 Request": "SCI5",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "LANG3D",
-    "Class 6 Request": "ART4, ART3, ART2",
-    "Class 7 Request": "ART2, ART4, ART5"
+    "Class 6 Request": "ART4",
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Orlando Robbins",
     "Grade": 12,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG6, ENG4, ENG7",
-    "Class 3 Request": "SCI3, SCI4, SCI5",
-    "Class 4 Request": "HIST4, HIST2, HIST3",
+    "Class 2 Request": "ENG6",
+    "Class 3 Request": "SCI3",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "LANG3D",
-    "Class 6 Request": "ART3, ART2, ART1",
+    "Class 6 Request": "ART3",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Jocelynn Sanders",
     "Grade": 12,
     "Class 1 Request": "",
-    "Class 2 Request": "ENG7, ENG6, ENG4",
-    "Class 3 Request": "SCI3, SCI4, SCI5",
-    "Class 4 Request": "HIST3, HIST4, HIST2",
+    "Class 2 Request": "ENG7",
+    "Class 3 Request": "SCI3",
+    "Class 4 Request": "HIST3",
     "Class 5 Request": "LANG3D",
     "Class 6 Request": "MATH7",
-    "Class 7 Request": "ART6, ART5, ART4"
+    "Class 7 Request": "ART6"
   },
   {
     "Student Name": "Gabriel Webster",
     "Grade": 12,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG5, ENG4, ENG2",
-    "Class 3 Request": "SCI3, SCI5, SCI4",
+    "Class 2 Request": "ENG5",
+    "Class 3 Request": "SCI3",
     "Class 4 Request": "",
     "Class 5 Request": "LANG2D",
     "Class 6 Request": "MATH6",
-    "Class 7 Request": "ART3, ART2, ART5"
+    "Class 7 Request": "ART3"
   },
   {
     "Student Name": "Chris Davies",
     "Grade": 12,
     "Class 1 Request": "",
-    "Class 2 Request": "ENG3, ENG2, ENG6",
-    "Class 3 Request": "SCI4, SCI3, SCI5",
-    "Class 4 Request": "HIST4, HIST3, HIST5",
+    "Class 2 Request": "ENG3",
+    "Class 3 Request": "SCI4",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "",
     "Class 6 Request": "MATH7",
-    "Class 7 Request": "ART2, ART5, ART3"
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Karen Villa",
     "Grade": 12,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG7, ENG6, ENG3",
-    "Class 3 Request": "SCI4, SCI5, SCI3",
-    "Class 4 Request": "HIST4, HIST5, HIST2",
+    "Class 2 Request": "ENG7",
+    "Class 3 Request": "SCI4",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "LANG2B",
     "Class 6 Request": "MATH7",
     "Class 7 Request": ""
@@ -1026,53 +1026,53 @@
     "Student Name": "Trevin Barnes",
     "Grade": 12,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG3, ENG7, ENG2",
-    "Class 3 Request": "SCI3, SCI4, SCI5",
-    "Class 4 Request": "HIST2, HIST4, HIST5",
+    "Class 2 Request": "ENG3",
+    "Class 3 Request": "SCI3",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "LANG2D",
     "Class 6 Request": "MATH7",
-    "Class 7 Request": "ART5, ART4, ART2"
+    "Class 7 Request": "ART5"
   },
   {
     "Student Name": "Hazel Christian",
     "Grade": 12,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG4, ENG7, ENG3",
-    "Class 3 Request": "SCI4, SCI5, SCI3",
-    "Class 4 Request": "HIST4, HIST5, HIST3",
+    "Class 2 Request": "ENG4",
+    "Class 3 Request": "SCI4",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "LANG2D",
-    "Class 6 Request": "SCI3, SCI5, SCI4",
+    "Class 6 Request": "SCI3",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Fiona Lloyd",
     "Grade": 12,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG3, ENG5, ENG7",
-    "Class 3 Request": "SCI3, SCI4, SCI5",
-    "Class 4 Request": "HIST4, HIST3, HIST5",
+    "Class 2 Request": "ENG3",
+    "Class 3 Request": "SCI3",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "",
-    "Class 6 Request": "SCI4, SCI5, SCI3",
-    "Class 7 Request": "ART2, ART6, ART3"
+    "Class 6 Request": "SCI4",
+    "Class 7 Request": "ART2"
   },
   {
     "Student Name": "Kamden Booker",
     "Grade": 12,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG7, ENG4, ENG3",
-    "Class 3 Request": "SCI3, SCI4, SCI5",
-    "Class 4 Request": "HIST4, HIST5, HIST3",
+    "Class 2 Request": "ENG7",
+    "Class 3 Request": "SCI3",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "LANG2D",
-    "Class 6 Request": "ART4, ART5, ART1",
+    "Class 6 Request": "ART4",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Patience Payne",
     "Grade": 12,
     "Class 1 Request": "MATH5",
-    "Class 2 Request": "ENG2, ENG3, ENG5",
-    "Class 3 Request": "SCI3, SCI5, SCI4",
-    "Class 4 Request": "HIST4, HIST2, HIST3",
+    "Class 2 Request": "ENG2",
+    "Class 3 Request": "SCI3",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "",
     "Class 6 Request": "MATH7",
     "Class 7 Request": ""
@@ -1081,22 +1081,22 @@
     "Student Name": "Myles Perry",
     "Grade": 12,
     "Class 1 Request": "",
-    "Class 2 Request": "ENG7, ENG3, ENG5",
-    "Class 3 Request": "SCI3, SCI5, SCI4",
-    "Class 4 Request": "HIST4, HIST2, HIST5",
+    "Class 2 Request": "ENG7",
+    "Class 3 Request": "SCI3",
+    "Class 4 Request": "HIST4",
     "Class 5 Request": "LANG1B",
-    "Class 6 Request": "ART1, ART4, ART3",
+    "Class 6 Request": "ART1",
     "Class 7 Request": ""
   },
   {
     "Student Name": "Tristan Collins",
     "Grade": 12,
     "Class 1 Request": "MATH4",
-    "Class 2 Request": "ENG5, ENG4, ENG6",
-    "Class 3 Request": "SCI4, SCI3, SCI5",
-    "Class 4 Request": "HIST2, HIST3, HIST4",
+    "Class 2 Request": "ENG5",
+    "Class 3 Request": "SCI4",
+    "Class 4 Request": "HIST2",
     "Class 5 Request": "LANG3B",
-    "Class 6 Request": "SCI4, SCI3, SCI5",
+    "Class 6 Request": "SCI4",
     "Class 7 Request": ""
   }
 ]
