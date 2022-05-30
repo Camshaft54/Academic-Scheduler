@@ -1,260 +1,346 @@
 [
   {
-    "Course Name": "Geometry",
+    "Name": "Geometry",
     "Type": "Math",
     "ID": "MATH1",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "Algebra II",
+    "Name": "Algebra II",
     "Type": "Math",
     "ID": "MATH2",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "Precalculus",
+    "Name": "Precalculus",
     "Type": "Math",
     "ID": "MATH3",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "AP Calculus AB",
+    "Name": "AP Calculus AB",
     "Type": "Math",
     "ID": "MATH4",
-    "Required": true
+    "Sections": 2,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "AP Calculus BC",
+    "Name": "AP Calculus BC",
     "Type": "Math",
     "ID": "MATH5",
-    "Required": true
+    "Sections": 2,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "AP Computer Science",
+    "Name": "AP Computer Science",
     "Type": "Math",
     "ID": "MATH6",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 20
   },
   {
-    "Course Name": "Algorithms",
+    "Name": "Algorithms",
     "Type": "Math",
     "ID": "MATH7",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 20
   },
   {
-    "Course Name": "Chemistry",
+    "Name": "Chemistry",
     "Type": "Science",
     "ID": "SCI1",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "Biology",
+    "Name": "Biology",
     "Type": "Science",
     "ID": "SCI2",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "Advanced Physics",
+    "Name": "Advanced Physics",
     "Type": "Science",
     "ID": "SCI3",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 20
   },
   {
-    "Course Name": "Advanced Chemistry",
+    "Name": "Advanced Chemistry",
     "Type": "Science",
     "ID": "SCI4",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 20
   },
   {
-    "Course Name": "Advanced Biology",
+    "Name": "Advanced Biology",
     "Type": "Science",
     "ID": "SCI5",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 20
   },
   {
-    "Course Name": "French II",
+    "Name": "French II",
     "Type": "Language",
     "ID": "LANG1A",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "French III",
+    "Name": "French III",
     "Type": "Language",
     "ID": "LANG1B",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "French IV",
+    "Name": "French IV",
     "Type": "Language",
     "ID": "LANG1C",
-    "Required": false
+    "Sections": 2,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "AP French",
+    "Name": "AP French",
     "Type": "Language",
     "ID": "LANG1D",
-    "Required": false
+    "Sections": 1,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "Spanish II",
+    "Name": "Spanish II",
     "Type": "Language",
     "ID": "LANG2A",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "Spanish III",
+    "Name": "Spanish III",
     "Type": "Language",
     "ID": "LANG2B",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "Spanish IV",
+    "Name": "Spanish IV",
     "Type": "Language",
     "ID": "LANG2C",
-    "Required": false
+    "Sections": 2,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "AP Spanish",
+    "Name": "AP Spanish",
     "Type": "Language",
     "ID": "LANG2D",
-    "Required": false
+    "Sections": 1,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "Chinese II",
+    "Name": "Chinese II",
     "Type": "Language",
     "ID": "LANG3A",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "Chinese III",
+    "Name": "Chinese III",
     "Type": "Language",
     "ID": "LANG3B",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "Chinese IV",
+    "Name": "Chinese IV",
     "Type": "Language",
     "ID": "LANG3C",
-    "Required": false
+    "Sections": 2,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "AP Chinese",
+    "Name": "AP Chinese",
     "Type": "Language",
     "ID": "LANG3D",
-    "Required": false
+    "Sections": 1,
+    "Required": true,
+    "Size": 20
   },
   {
-    "Course Name": "US History",
+    "Name": "US History",
     "Type": "History",
     "ID": "HIST1",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 15
   },
   {
-    "Course Name": "Current Events",
+    "Name": "Current Events",
     "Type": "History",
     "ID": "HIST2",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Food on Your Plate",
+    "Name": "Food on Your Plate",
     "Type": "History",
     "ID": "HIST3",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Humanitas",
+    "Name": "Humanitas",
     "Type": "History",
     "ID": "HIST4",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Macroeconomics",
+    "Name": "Macroeconomics",
     "Type": "History",
     "ID": "HIST5",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "US Literature",
+    "Name": "US Literature",
     "Type": "English",
     "ID": "ENG1",
-    "Required": true
+    "Sections": 3,
+    "Required": true,
+    "Size": 15
   },
   {
-    "Course Name": "Bay Area Literature",
+    "Name": "Bay Area Literature",
     "Type": "English",
     "ID": "ENG2",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Comedy",
+    "Name": "Comedy",
     "Type": "English",
     "ID": "ENG3",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Women's Literature",
+    "Name": "Women's Literature",
     "Type": "English",
     "ID": "ENG4",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Performing Masculinity",
+    "Name": "Performing Masculinity",
     "Type": "English",
     "ID": "ENG5",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Buddhist Thought",
+    "Name": "Buddhist Thought",
     "Type": "English",
     "ID": "ENG6",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Literature of War",
+    "Name": "Literature of War",
     "Type": "English",
     "ID": "ENG7",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "2D Art",
+    "Name": "2D Art",
     "Type": "Art",
     "ID": "ART1",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "3D Art",
+    "Name": "3D Art",
     "Type": "Art",
     "ID": "ART2",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Digital Art",
+    "Name": "Digital Art",
     "Type": "Art",
     "ID": "ART3",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Photography",
+    "Name": "Photography",
     "Type": "Art",
     "ID": "ART4",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Sculpture",
+    "Name": "Sculpture",
     "Type": "Art",
     "ID": "ART5",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Band",
+    "Name": "Band",
     "Type": "Art",
     "ID": "ART6",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   },
   {
-    "Course Name": "Choir",
+    "Name": "Choir",
     "Type": "Art",
     "ID": "ART7",
-    "Required": false
+    "Sections": 1,
+    "Required": false,
+    "Size": 15
   }
 ]
