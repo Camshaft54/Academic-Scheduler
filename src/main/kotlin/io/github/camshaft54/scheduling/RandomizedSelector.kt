@@ -6,6 +6,10 @@ import kotlin.math.min
 
 
 class RandomizedSelector(private val students: List<Student>, private val sections: List<RosteredSection>) {
+    /**
+     * Given a specified number of iterations, this method generates schedules until it finds the best one as determined
+     * by the average request success for each student and number of required courses rejected overall for the schedule
+     */
     fun findBestSchedule(iterations: Int): MasterSchedule? {
         var bestSchedule: MasterSchedule? = null
         var bestMinRequiredRejects = Integer.MAX_VALUE
@@ -23,6 +27,10 @@ class RandomizedSelector(private val students: List<Student>, private val sectio
         return bestSchedule
     }
 
+    /**
+     * Generates a master schedule randomly by randomly adding a random number of courses to each period and going back
+     * and putting the remaining courses in periods with the least classes
+     */
     private fun generateRandomMasterSchedule(): MasterSchedule {
         val remainingCourses = sections.toMutableList()
         val masterSchedule = mutableMapOf<Period, MutableList<RosteredSection>>()
@@ -45,6 +53,11 @@ class RandomizedSelector(private val students: List<Student>, private val sectio
         return MasterSchedule(masterSchedule, students.map { ScheduledStudent(it) })
     }
 
+    /**
+     * Generates student schedules by putting as many of the available students in each course as possible.
+     * The round is either the first, second, or third choice the student has for a course. Students never have backups
+     * for required courses.
+     */
     private fun generateStudentSchedules(masterSchedule: MasterSchedule): MasterSchedule {
         for (round in 0 until 3) {
             masterSchedule.selectStudentsForEachCourse(round) { section, availableStudents ->
@@ -63,6 +76,9 @@ class RandomizedSelector(private val students: List<Student>, private val sectio
     companion object {
         private val rand = Random()
 
+        /**
+         * Chooses random elements from a list the specified number of times
+         */
         fun <T : Any> List<T>.chooseRandomElements(count: Int): List<T> {
             if (count <= 0) return emptyList()
             if (size <= count) return this
@@ -70,19 +86,23 @@ class RandomizedSelector(private val students: List<Student>, private val sectio
             return (0 until count).map { mutable.removeAt(rand.nextInt(mutable.size)) }
         }
 
+        /**
+         * Removes random number of courses from a list of rostered sections according to gaussian distribution if period is not art only
+         */
         private fun MutableList<RosteredSection>.removeRandomNumberOfRandomCourses(
             periodNum: Int, artOnly: Boolean
         ): MutableList<RosteredSection> {
-            val courseCount = if (artOnly) {
-                if (this.size > 4) rand.nextInt(4, this.size)
-                else this.size
-            } else {
-                val minCoursesPerPeriod = min(4.0, this.size.toDouble())
-                val meanCourses = this.size.toDouble() / (7 - periodNum)
-                val sdCourses = 1.5
-                val maxCourses = this.size - (6 - periodNum) * minCoursesPerPeriod
-                rand.nextGaussian(meanCourses, sdCourses).coerceIn(minCoursesPerPeriod, maxCourses).toInt()
-            }
+            val courseCount =
+                if (artOnly) { // If art only, just pick random number between 4 and the number of art courses (or number of art courses if <= 4)
+                    if (this.size > 4) rand.nextInt(4, this.size)
+                    else this.size
+                } else {
+                    val minCoursesPerPeriod = min(4.0, this.size.toDouble())
+                    val meanCourses = this.size.toDouble() / (7 - periodNum)
+                    val sdCourses = 1.5
+                    val maxCourses = this.size - (6 - periodNum) * minCoursesPerPeriod
+                    rand.nextGaussian(meanCourses, sdCourses).coerceIn(minCoursesPerPeriod, maxCourses).toInt()
+                }
             return this.chooseRandomElements(courseCount).toMutableList()
         }
     }

@@ -9,6 +9,9 @@ import kotlinx.serialization.json.decodeFromStream
 import java.io.File
 
 
+/**
+ * Prints the best schedule after 10,000 iterations using schedule generating algorithm
+ */
 fun main() {
     val bestMasterSchedule = bestScheduleFromInput(File("input/students.json"), File("input/courses.json"), 10000)
     if (bestMasterSchedule != null) {
@@ -22,11 +25,18 @@ fun main() {
         }
         println("--- Student Schedules ---")
         for (student in bestMasterSchedule.scheduledStudents) {
-            println("${student.name} (Grade ${student.grade}): ${student.schedule.map { (period, section) -> "$period: $section"}.joinToString()}")
+            println(
+                "${student.name} (Grade ${student.grade}): ${
+                    student.schedule.map { (period, section) -> "$period: $section" }.joinToString()
+                }"
+            )
         }
     }
 }
 
+/**
+ * Convenience method for finding best schedule from student and course file with specified number of iterations
+ */
 @OptIn(ExperimentalSerializationApi::class)
 fun bestScheduleFromInput(studentsFile: File, coursesFile: File, iterations: Int): MasterSchedule? {
     val jsonStudents = Json.decodeFromStream<Array<JSONStudent>>(studentsFile.inputStream())

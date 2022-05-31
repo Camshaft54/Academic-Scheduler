@@ -3,6 +3,9 @@ package io.github.camshaft54.scheduling.dataTypes
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ * Data type for taking in json courses using kotlinx.serialization
+ */
 @Serializable
 open class JSONCourse(
     @SerialName("Name") val name: String,

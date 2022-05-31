@@ -3,6 +3,10 @@ package io.github.camshaft54.scheduling.dataTypes
 class MasterSchedule(
     val masterSchedule: Map<Period, List<RosteredSection>>, val scheduledStudents: List<ScheduledStudent>
 ) {
+    /**
+     * Iterates through the courses in the master schedule by period, prioritizing required courses, and
+     * finds all requesting and available students for the current course
+     */
     fun selectStudentsForEachCourse(
         round: Int,
         action: (section: RosteredSection, requestingStudents: List<ScheduledStudent>) -> List<ScheduledStudent>
@@ -21,10 +25,14 @@ class MasterSchedule(
         }
     }
 
+    /**
+     * Averages the selection success of all scheduled students
+     */
     fun calculateSuccess(): Double {
         return scheduledStudents.map { it.calculateSelectionSuccess() }.average()
     }
 
+    // Gets all the required courses that students were rejected from
     fun getAllRequiredRejects(): Map<ScheduledStudent, List<RosteredSection>> {
         return scheduledStudents.associateWith { it.getRequiredRejects(masterSchedule.values.flatten()) }
     }

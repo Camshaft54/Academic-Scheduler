@@ -1,5 +1,8 @@
 package io.github.camshaft54.scheduling.dataTypes
 
+/**
+ * Stores the possible class types as well as an invalid one. Currently, CourseType is not used by scheduler, but could be useful for later analytics
+ */
 enum class CourseType(val displayName: String) {
     MATH("Math"),
     SCIENCE("Science"),
@@ -14,6 +17,9 @@ enum class CourseType(val displayName: String) {
     }
 }
 
+/**
+ * Stores the periods in the schedule and if they only allow art classes
+ */
 enum class Period(val artOnly: Boolean = false) {
     A, B, C, D, E(artOnly = true), F, G
 }

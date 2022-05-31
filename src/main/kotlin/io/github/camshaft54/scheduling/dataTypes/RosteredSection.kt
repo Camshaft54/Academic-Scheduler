@@ -2,6 +2,9 @@ package io.github.camshaft54.scheduling.dataTypes
 
 import io.github.camshaft54.scheduling.dataTypes.CourseType.Companion.toCourseType
 
+/**
+ * Represents a single section of course. Has almost exact same data as a JSONCourse, just with a section number.
+ */
 open class RosteredSection(jsonCourse: JSONCourse, val section: Int) {
     @Suppress("unused")
     val name: String = jsonCourse.name
@@ -17,6 +20,6 @@ open class RosteredSection(jsonCourse: JSONCourse, val section: Int) {
     }
 
     override fun toString(): String {
-        return "$id-${section+1}/$sectionCount"
+        return "$id-${section + 1}/$sectionCount"
     }
 }
