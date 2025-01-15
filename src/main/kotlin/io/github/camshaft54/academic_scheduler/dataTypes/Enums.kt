@@ -1,4 +1,4 @@
-package io.github.camshaft54.scheduling.dataTypes
+package io.github.camshaft54.academic_scheduler.dataTypes
 
 /**
  * Stores the possible class types as well as an invalid one. Currently, CourseType is not used by scheduler, but could be useful for later analytics

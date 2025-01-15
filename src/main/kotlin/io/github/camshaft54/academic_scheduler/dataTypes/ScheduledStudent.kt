@@ -1,4 +1,4 @@
-package io.github.camshaft54.scheduling.dataTypes
+package io.github.camshaft54.academic_scheduler.dataTypes
 
 /**
  * A student with a schedule. Has methods for calculating success and required courses that student was rejected from

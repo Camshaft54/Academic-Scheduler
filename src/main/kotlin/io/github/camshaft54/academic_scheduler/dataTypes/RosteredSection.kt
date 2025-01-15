@@ -1,6 +1,6 @@
-package io.github.camshaft54.scheduling.dataTypes
+package io.github.camshaft54.academic_scheduler.dataTypes
 
-import io.github.camshaft54.scheduling.dataTypes.CourseType.Companion.toCourseType
+import io.github.camshaft54.academic_scheduler.dataTypes.CourseType.Companion.toCourseType
 
 /**
  * Represents a single section of course. Has almost exact same data as a JSONCourse, just with a section number.

@@ -1,4 +1,4 @@
-package io.github.camshaft54.scheduling.dataTypes
+package io.github.camshaft54.academic_scheduler.dataTypes
 
 class MasterSchedule(
     val masterSchedule: Map<Period, List<RosteredSection>>, val scheduledStudents: List<ScheduledStudent>

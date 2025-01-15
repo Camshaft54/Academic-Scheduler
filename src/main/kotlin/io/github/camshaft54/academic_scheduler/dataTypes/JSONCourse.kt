@@ -1,4 +1,4 @@
-package io.github.camshaft54.scheduling.dataTypes
+package io.github.camshaft54.academic_scheduler.dataTypes
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

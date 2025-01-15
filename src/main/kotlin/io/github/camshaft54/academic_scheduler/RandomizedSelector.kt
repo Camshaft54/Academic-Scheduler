@@ -1,6 +1,6 @@
-package io.github.camshaft54.scheduling
+package io.github.camshaft54.academic_scheduler
 
-import io.github.camshaft54.scheduling.dataTypes.*
+import io.github.camshaft54.academic_scheduler.dataTypes.*
 import java.util.*
 import kotlin.math.min
 

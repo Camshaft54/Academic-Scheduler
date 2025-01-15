@@ -1,4 +1,4 @@
-package io.github.camshaft54.scheduling.dataTypes
+package io.github.camshaft54.academic_scheduler.dataTypes
 
 /**
  * Represents students with course requests that can be validated

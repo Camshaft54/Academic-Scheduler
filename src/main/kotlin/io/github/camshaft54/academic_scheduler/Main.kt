@@ -1,8 +1,8 @@
-package io.github.camshaft54.scheduling
+package io.github.camshaft54.academic_scheduler
 
-import io.github.camshaft54.scheduling.dataTypes.JSONCourse
-import io.github.camshaft54.scheduling.dataTypes.JSONStudent
-import io.github.camshaft54.scheduling.dataTypes.MasterSchedule
+import io.github.camshaft54.academic_scheduler.dataTypes.JSONCourse
+import io.github.camshaft54.academic_scheduler.dataTypes.JSONStudent
+import io.github.camshaft54.academic_scheduler.dataTypes.MasterSchedule
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.decodeFromStream
